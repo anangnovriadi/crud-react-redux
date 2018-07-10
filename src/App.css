@@ -26,3 +26,11 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+/* New Style */
+
+.div-all {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+/* End New Style */
