@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Post from './Post';
+import EditForm from '../update/UpdateForm'; 
 
 class ViewPost extends React.Component {
     render() {
@@ -10,8 +11,13 @@ class ViewPost extends React.Component {
                     <h4>All Post</h4>
                 </div>
                 <div className="pt-2">
-                    {console.log(this.props.posts)}
-                    {this.props.posts.map((post) => <Post key={post.id} post={post} />)}
+                    {/* {console.log(this.props.posts)} */}
+                    {this.props.posts.map((post) => (
+                        <div key={post.id}>
+                            {post.editing ? <EditForm post={post} key={post.id} /> :
+                            <Post key={post.id} post={post} />}
+                        </div>
+                    ))}
                 </div>
             </div>
         );

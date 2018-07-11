@@ -29,8 +29,22 @@
 
 /* New Style */
 
+body {
+  font-family: 'Consolas';
+}
+
 .div-all {
   border-bottom: 1px solid #d4d4d4;
+}
+
+.box-sha {
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box-sha span {
+  font-size: 18px;
+  color: #656565;
+  font-weight: 600;
 }
 
 /* End New Style */

@@ -8,9 +8,10 @@ class PostForm extends React.Component {
         const description = this.getDescription.value;
         const data = {
             id: new Date(),
-            title, description
+            title, description,
+            editing: false
         }
-        console.log(data);
+        // console.log(data);
         this.props.dispatch({
             type: 'ADD_POST', data
         });

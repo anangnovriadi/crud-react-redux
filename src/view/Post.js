@@ -11,7 +11,7 @@ class Post extends React.Component {
                 </div>
                 <div className="row m-0 pt-1">
                     <div className="pr-2">
-                        <button type="button" className="btn btn-info">Edit</button>
+                        <button onClick={()=>this.props.dispatch({type: 'EDIT_POST', id: this.props.post.id})} className="btn btn-info">Edit</button>
                     </div>
                     <div>
                         <button onClick={()=>this.props.dispatch({type: 'DELETE_POST', id: this.props.post.id})} className="btn btn-dark">Delete</button>

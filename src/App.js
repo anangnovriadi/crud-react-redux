@@ -8,11 +8,11 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <div className="mt-4">
-          <div className="alert alert-primary">
-            App React Redux
+        <div className="mt-5">
+          <div className="alert alert-primary box-sha">
+            <span>App React Redux</span>
           </div>
-          <div className="pt-3 pl-4 pr-4">
+          <div className="pt-4 pl-4 pr-4">
             <div className="row">
               <PostForm />
               <ViewPost />
