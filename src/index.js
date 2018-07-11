@@ -8,7 +8,6 @@ import postReducer from './reducer/PostReducer';
 
 const store = createStore(postReducer); 
 
-// ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(
     <Provider store={store}>
     <App />
